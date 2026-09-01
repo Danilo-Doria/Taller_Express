@@ -15,6 +15,7 @@ public class MenuPrincipal {
     public MenuPrincipal(UsuarioController usuarioController, RepuestoController repuestoController,
             ClienteController clienteController, VehiculoController vehiculoController,
             OrdenServicioController ordenServicioController) {
+
         this.usuarioView = new UsuarioView(usuarioController);
         this.repuestoView = new RepuestoView(repuestoController);
         this.clienteView = new ClienteView(clienteController, vehiculoController);

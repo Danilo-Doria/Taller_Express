@@ -10,8 +10,8 @@ import java.util.List;
 
 public class UsuarioController {
 
-    private final UsuarioService servicioBase;       // respeta el role que le pases
-    private final UsuarioService servicioDecorado;    // fuerza RECEPCIONISTA/ACTIVO/now() (decorador)
+    private final UsuarioService servicioBase;
+    private final UsuarioService servicioDecorado;
 
     public UsuarioController(UsuarioService servicioBase, UsuarioService servicioDecorado) {
         this.servicioBase = servicioBase;

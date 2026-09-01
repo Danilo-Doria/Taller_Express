@@ -37,9 +37,6 @@ public class DialogHelper {
                 JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, opciones, opciones[0]);
     }
 
-    /**
-     * Tabla de texto alineada para mostrar listados dentro de JOptionPane.
-     */
     public static String formatTable(String[] headers, List<String[]> filas) {
         int[] anchos = new int[headers.length];
         for (int i = 0; i < headers.length; i++) {
