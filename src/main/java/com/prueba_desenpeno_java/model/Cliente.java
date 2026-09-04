@@ -11,4 +11,8 @@ public record Cliente(
         EstadoEnum estado,
         List<Vehiculo> vehiculos
         ) {
+
+    public Cliente(String documento, String nombreCompleto, String email, String telefono, List<Vehiculo> vehiculos) {
+        this(null, documento, nombreCompleto, email, telefono, EstadoEnum.ACTIVO, vehiculos);
+    }
 }

@@ -1,6 +1,6 @@
 # TallerExpress – Spare Parts & Service Order Management
 
-Desktop application developed in **Java 17+** for managing an automotive workshop, using **JOptionPane** as the graphical interface, **JDBC** for persistence, and **PostgreSQL** as the database engine.
+Desktop application developed in **Java 17+** for managing an automotive workshop, using **JFrame** as the graphical interface, **JDBC** for persistence, and **PostgreSQL** as the database engine.
 
 The project follows a layered architecture based on **Model, Repository, Service, Controller, and View**, with business validations, custom exceptions, authentication, role-based access, inventory management, and service-order management.
 
@@ -88,7 +88,7 @@ The application uses a relational PostgreSQL database and communicates with it t
 | Technology               | Purpose                               |
 | ------------------------ | ------------------------------------- |
 | Java 17+                 | Main programming language             |
-| Java Swing / JOptionPane | Graphical user interface              |
+| Java Swing / JFrame      | Graphical user interface              |
 | JDBC                     | Database connectivity and persistence |
 | PostgreSQL 16            | Relational database                   |
 | Docker / Docker Compose  | PostgreSQL environment                |
@@ -167,14 +167,30 @@ src/main/java/com/prueba_desenpeno_java/
 │   ├── UsuarioController.java
 │   └── VehiculoController.java
 │
-├── view/
-│   ├── ClienteView.java
-│   ├── DialogHelper.java
+├── view
+│   ├── forms
+│   │   ├── CambiarEstadoOrdenFrame.java
+│   │   ├── ClienteFormFrame.java
+│   │   ├── FinalizarOrdenFrame.java
+│   │   ├── HistorialVehiculosFrame.java
+│   │   ├── OrdenServicioFormFrame.java
+│   │   ├── RepuestoFormFrame.java
+│   │   ├── UsuarioFormFrame.java
+│   │   └── VehiculoFormFrame.java
+│   ├── MainFrame.java
 │   ├── MenuPrincipal.java
-│   ├── OrdenServicioView.java
-│   ├── RepuestoView.java
-│   ├── UsuarioView.java
-│   └── VehiculoView.java
+│   ├── panels
+│   │   ├── ClientePanel.java
+│   │   ├── LoginPanel.java
+│   │   ├── MenuPanel.java
+│   │   ├── OrdenServicioPanel.java
+│   │   ├── Refrescable.java
+│   │   ├── RepuestoPanel.java
+│   │   ├── UsuarioPanel.java
+│   │   └── VehiculoPanel.java
+│   └── util
+│       ├── Mensajes.java
+│       └── TableUtil.java
 │
 └── Prueba_desenpeno_java.java
 ```
@@ -444,7 +460,7 @@ Run the main class:
 com.prueba_desenpeno_java.Prueba_desenpeno_java
 ```
 
-The application will open the login interface using `JOptionPane`.
+The application will open the login interface using `JFrame`.
 
 ---
 
@@ -464,19 +480,19 @@ The following users are already registered in the database and can be used to ac
 ## Screenshots
 
 ### 1. Login
-![login](./Screenshots/Captura%20desde%202026-08-31%2019-39-34.png)
+![login](./Screenshots/1.png)
 
 ### 2. Main Menu As A Admin
-![Main Menu As A Admin](./Screenshots/Captura%20desde%202026-08-31%2019-40-04.png)
+![Main Menu As A Admin](./Screenshots/2.png)
 
 ### 3. Main Menu As A Receptionist
-![Main Menu As A Receptionist](./Screenshots/Captura%20desde%202026-08-31%2019-40-26.png)
+![Main Menu As A Receptionist](./Screenshots/3.png)
 
-### 4. User's List View
-![User's List View](./Screenshots/Captura%20desde%202026-08-31%2019-40-50.png)
+### 4. Vehicle's Service Orders View
+![Vehicle's Service Orders View](./Screenshots/4.png)
 
 ### 5. Car's Info View
-![Car' Info View](./Screenshots/Captura%20desde%202026-08-31%2019-41-19.png)
+![Car' Info View](./Screenshots/5.png)
 
 ---
 

@@ -70,6 +70,7 @@ public class UsuarioRepositoryImpl implements UsuarioRepository {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            // CORREGIDO: Se cambió RuntimeException por PersistenceException
             throw new PersistenceException("Error al buscar usuario por id: " + e.getMessage(), e);
         }
         return Optional.empty();
