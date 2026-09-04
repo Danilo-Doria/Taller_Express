@@ -1,6 +1,6 @@
 # TallerExpress – Spare Parts & Service Order Management
 
-Desktop application developed in **Java 17+** for managing an automotive workshop, using **JFrame** as the graphical interface, **JDBC** for persistence, and **PostgreSQL** as the database engine.
+Desktop application developed in **Java 21** for managing an automotive workshop, using **JFrame** as the graphical interface, **JDBC** for persistence, and **PostgreSQL** as the database engine.
 
 The project follows a layered architecture based on **Model, Repository, Service, Controller, and View**, with business validations, custom exceptions, authentication, role-based access, inventory management, and service-order management.
 
@@ -87,7 +87,7 @@ The application uses a relational PostgreSQL database and communicates with it t
 
 | Technology               | Purpose                               |
 | ------------------------ | ------------------------------------- |
-| Java 17+                 | Main programming language             |
+| Java 21                  | Main programming language             |
 | Java Swing / JFrame      | Graphical user interface              |
 | JDBC                     | Database connectivity and persistence |
 | PostgreSQL 16            | Relational database                   |
@@ -470,8 +470,8 @@ The following users are already registered in the database and can be used to ac
 
 | Username    | Password       | Role            | Status   |
 | ----------- | -------------- | --------------- | -------- |
-| `admin`     | `123`     | `ADMIN`         | `ACTIVE` |
-| `secre` | `123` | `RECEPCIONISTA` | `ACTIVE` |
+| `admin`     | `123`          | `ADMIN`         | `ACTIVE` |
+| `secre`     | `123`          | `RECEPCIONISTA` | `ACTIVE` |
 
 > **Note:** These credentials are provided for testing purposes. In a production environment, passwords should never be stored or documented in plain text.
 
