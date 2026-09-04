@@ -58,7 +58,7 @@ public class OrdenServicioServiceImpl implements OrdenServicioService {
                 }
             }
         }
-        return ordenRepository.guardar(orden); // ya es transaccional dentro del repositorio
+        return ordenRepository.guardar(orden);
     }
 
     @Override

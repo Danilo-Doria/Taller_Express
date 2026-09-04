@@ -21,6 +21,7 @@ public class UsuarioView {
     public Usuario login() {
         while (true) {
             String usuario = DialogHelper.input("Usuario:");
+            
             if (usuario == null) {
                 return null;
             }

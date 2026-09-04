@@ -25,7 +25,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public Usuario crear(Usuario usuario) throws PersistenceException {
-        // Lógica base: persiste tal cual llega. Los defaults los aplica el decorador.
+
         System.out.println("[POST /api/usuarios] (lógica base) creando usuario: " + usuario.nombreUsuario());
         return usuarioRepository.guardar(usuario);
     }
