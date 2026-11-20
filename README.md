@@ -499,7 +499,7 @@ The following users are already registered in the database and can be used to ac
 ## 👨‍💻 Author
 
 * **GitHub:** [Danilo-Doria](https://github.com/Danilo-Doria)
-* **LinkedIn:** [Danilo Doria Diaz](https://www.linkedin.com/in/danilodd)
+* **LinkedIn:** [Danilo Doria Diaz](https://www.linkedin.com/in/danilo-doria-diaz)
 * **Email:** [danilodoria519@gmail.com](mailto:danilodoria519@gmail.com)
 
 ---
